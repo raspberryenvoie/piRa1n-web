@@ -53,19 +53,12 @@
     </div>
     <?php
     $localVersion = readfile('home/pi/piRa1n/version');
-    $remoteVersion = shell_exec('curl -sk https://raw.githubusercontent.com/raspberryenvoie/piRa1n/master/version')
+    $remoteVersion = shell_exec('curl -sk https://raw.githubusercontent.com/raspberryenvoie/piRa1n/master/version');
     if ($localVersion == $remoteVersion) {
       echo "piRa1n is up to date!";
     }
     elseif ($localVersion != $remoteVersion) {
-      echo "    <div class="update">
-            <form action="update.php" method="post">
-              <p>
-              Update:<br>
-              <input type="submit" value="Update" name="updateSubmit">
-              </p>
-            </form>
-          </div>";
+      echo "    <div class="update"><form action="update.php" method="post"><p>Update:<br><input type="submit" value="Update" name="updateSubmit"></p></form></div>";
     }
     ?>
   </body>
