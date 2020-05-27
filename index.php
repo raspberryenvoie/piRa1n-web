@@ -58,7 +58,7 @@
       echo "piRa1n is up to date!";
     }
     elseif ($localVersion != $remoteVersion) {
-      echo "    <div class="update"><form action="update.php" method="post"><p>Update:<br><input type="submit" value="Update" name="updateSubmit"></p></form></div>";
+      echo '    <div class="update"><form action="update.php" method="post"><p>Update:<br><input type="submit" value="Update" name="updateSubmit"></p></form></div>';
     }
     ?>
   </body>
