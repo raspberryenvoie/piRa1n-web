@@ -1,7 +1,7 @@
 #!/bin/sh
 sudo apt update
 sudo apt upgrade -y
-sudo apt install apache2 php -y
+sudo apt install apache2 php git -y
 sudo sed -i 's/.*DirectoryIndex.*/        DirectoryIndex index.php index.html index.cgi index.pl index.xhtml index.htm/g' /etc/apache2/mods-available/dir.conf
 sudo systemctl restart apache2.service
 cd /home/pi/
