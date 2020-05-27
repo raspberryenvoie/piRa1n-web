@@ -1,0 +1,14 @@
+body {
+  font-family: 'Fira Code', monospace;
+  background-color: #000000;
+  color: #ffffff;
+}
+.back {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 30px;
+}
+.output {
+  text-align: center;
+  font-size: 30px;
+}
