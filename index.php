@@ -53,7 +53,7 @@
     </div>
     <?php
     $localVersion = readfile('home/pi/piRa1n/version');
-    $remoteVersion = shell_exec('curl -sk https://raw.githubusercontent.com/raspberryenvoie/piRa1n/master/version');
+    $remoteVersion = shell_exec('curl -k https://raw.githubusercontent.com/raspberryenvoie/piRa1n/master/version');
     if ($localVersion == $remoteVersion) {
       echo "piRa1n is up to date!";
     }
