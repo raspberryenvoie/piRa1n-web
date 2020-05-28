@@ -7,5 +7,5 @@ if [ $? -eq 0 ]; then
     echo '1'
   fi
 else
-    echo "2"
+    echo '2'
 fi
