@@ -13,7 +13,7 @@
     </p>
     <div class="output">
        <strong>⚠️ Don't shutdown the Pi until the update are installed!</strong><br>
-       You can find the status of the update <a href="update_status.php>here</a>.
+       You can find the status of the update <a href="update_status.php">here</a>.
       <?php
       if(isset($_POST['updateSubmit'])){
         shell_exec("nohup sudo /home/pi/piRa1n-web/update.sh > /dev/null 2>&1 &");
