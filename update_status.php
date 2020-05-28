@@ -12,10 +12,14 @@
       <a href="/" class="back">&lt; Go back</a>
     </p>
     <div class="output">
-      ⚠️ Don't shut down the Pi until you're told to!<br>
+      <p>⚠️ Don't shut down the Pi until you see "Update completed"!<br>
+        Please refresh this page!
+      </p>
+      <p>
       <?php
       readfile("/home/pi/piRa1n-web/update.out");
       ?>
+      </p>
     </div>
   </body>
 </html>
