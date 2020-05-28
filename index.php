@@ -57,6 +57,9 @@
     }
     elseif ($lookForUpdates == 1) {
       echo '<form action="update.php" method="post"><p>An update is available!<br><input type="submit" value="Update" name="updateSubmit"></p></form>';
+    } ?>
+    elseif ($lookForUpdates == 2) {
+      echo 'You are offline!';
     } ?></div>
   </body>
 </html>
