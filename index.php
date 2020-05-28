@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- Have a nice day :) -->
 <html lang="en" dir="ltr">
   <head>
     <link rel="stylesheet" href="style.css">
@@ -16,29 +17,26 @@
       <form action="options.php" method="post">
         <p>
           Auto shutdown:<br>
-          <input type="checkbox" name="autoShutdown"<?php
+          <input type="checkbox" name="autoShutdown" <?php
     if( shell_exec("grep 'while true' /home/pi/piRa1n/piRa1n.sh")) {
     }
     else {
       echo "checked";
-    }
- ?>>
+    } ?>>
         </p>
         <p>
           Safe mode:<br>
-          <input type="checkbox" name="safeMode"<?php
+          <input type="checkbox" name="safeMode" <?php
     if( shell_exec("grep ' -s' /home/pi/piRa1n/piRa1n.sh")) {
       echo "checked";
-    }
- ?>>
+    } ?>>
         </p>
         <p>
           Verbose boot:<br>
-          <input type="checkbox" name="verbose"<?php
+          <input type="checkbox" name="verbose" <?php
     if( shell_exec("grep ' -v' /home/pi/piRa1n/piRa1n.sh")) {
       echo "checked";
-    }
-  ?>>
+    } ?>>
         </p>
         <input type="submit" name="optionsSubmit" value="Apply">
       </form>
