@@ -14,7 +14,7 @@
     <div class="output">
       ⚠️ Don't shut down the Pi until you're told to!<br>
       <?php
-      readfile("/home/pi/piRa1n/update.out");
+      readfile("/home/pi/piRa1n-web/update.out");
       ?>
     </div>
   </body>
