@@ -12,7 +12,7 @@
       <a href="/" class="back">&lt; Go back</a>
     </p>
     <div class="output">
-      ⚠️ You can only shutdown the Pi if you see this string: Update completed!
+      ⚠️ Don't shut down the Pi until you're told to!<br>
       <?php
       readfile("/home/pi/piRa1n/update.out");
       ?>
