@@ -54,18 +54,11 @@
     <div class="update">
     <?php
     $lookForUpdates = shell_exec('/home/pi/piRa1n-web/look_for_updates.sh');
-    echo "$lookForUpdates";
-    if ($lookForUpdates == "piRa1n is up to date!") {
+    if ($lookForUpdates == 0) {
       echo "piRa1n is up to date!";
     }
-    elseif ($lookForUpdates == "An update is available!") {
-      echo '      <form action="update.php" method="post">
-              <p>$lookForUpdates<br><
-                input type="submit" value="Update" name="updateSubmit">
-              </p><
-            /form>';
-    }
-    ?>
-    </div>
+    elseif ($lookForUpdates == 1) {
+      echo '<form action="update.php" method="post"><p>An update is available!<br><input type="submit" value="Update" name="updateSubmit"></p></form>';
+    } ?></div>
   </body>
 </html>
