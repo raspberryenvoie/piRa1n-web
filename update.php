@@ -12,11 +12,11 @@
       <a href="/" class="back">&lt; Go back</a>
     </p>
     <div class="output">
+       <strong>⚠️ Don't shutdown the Pi until the update are installed!</strong><br>
+       You can find the status of the update <a href="update_status.php>here</a>.
       <?php
       if(isset($_POST['updateSubmit'])){
-        shell_exec("nohup curl -sk https://raw.githubusercontent.com/raspberryenvoie/piRa1n/master/update.sh | sh > /home/pi/piRa1n/update.out &");
-        echo "<strong>⚠️ Don't shutdown the Pi until the update are installed!</strong><br>
-        You can find the status of the update <a href="update_status.php>here</a>.";
+        shell_exec("nohup sudo /home/pi/piRa1n-web/update.sh > /dev/null 2>&1 &");
       }
       ?>
     </div>
