@@ -51,15 +51,21 @@
         </p>
       </form>
     </div>
+    <div class="update">
     <?php
-    $localVersion = readfile('home/pi/piRa1n/version');
-    $remoteVersion = shell_exec('curl -k https://raw.githubusercontent.com/raspberryenvoie/piRa1n/master/version');
-    if ($localVersion == $remoteVersion) {
+    $lookForUpdates = shell_exec('/home/pi/piRa1n-web/look_for_updates.sh');
+    echo "$lookForUpdates";
+    if ($lookForUpdates == "piRa1n is up to date!") {
       echo "piRa1n is up to date!";
     }
-    elseif ($localVersion != $remoteVersion) {
-      echo '    <div class="update"><form action="update.php" method="post"><p>Update:<br><input type="submit" value="Update" name="updateSubmit"></p></form></div>';
+    elseif ($lookForUpdates == "An update is available!") {
+      echo '      <form action="update.php" method="post">
+              <p>$lookForUpdates<br><
+                input type="submit" value="Update" name="updateSubmit">
+              </p><
+            /form>';
     }
     ?>
+    </div>
   </body>
 </html>
