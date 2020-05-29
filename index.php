@@ -34,7 +34,7 @@
         <p>
           Verbose boot:<br>
           <input type="checkbox" name="verbose" <?php
-    if( shell_exec("grep ' -v' /home/pi/piRa1n/piRa1n.sh")) {
+    if( shell_exec("grep ' -V' /home/pi/piRa1n/piRa1n.sh")) {
       echo "checked";
     } ?>>
         </p>
