@@ -1,2 +1,2 @@
-#!/bin/bash
-curl -sk https://raw.githubusercontent.com/raspberryenvoie/piRa1n/master/update.sh | bash > /home/pi/piRa1n-web/update.out
+#!/bin/sh
+curl -sk https://raw.githubusercontent.com/raspberryenvoie/piRa1n/master/update.sh | sh > /home/pi/piRa1n-web/update.out
