@@ -6,11 +6,11 @@
     <link href="https://fonts.googleapis.com/css?family=Fira+Code:400,600&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
-    <title>piRa1n</title>
+    <title>piRa1n <?php readfile("/home/pi/piRa1n/version"); ?></title>
   </head>
   <body>
     <div class="header">
-      <a href="https://github.com/raspberryenvoie/piRa1n" class="title">piRa1n</a><br>
+      <a href="https://github.com/raspberryenvoie/piRa1n" class="title">piRa1n <?php readfile("/home/pi/piRa1n/version"); ?></a><br>
       Made with ♥️ by <a href="https://www.reddit.com/user/raspberryenvoie" class="author">raspberryenvoie</a>
     </div>
     <div class="options">
@@ -53,7 +53,7 @@
     <?php
     $lookForUpdates = shell_exec('/home/pi/piRa1n-web/look_for_updates.sh');
     if ($lookForUpdates == 0) {
-      echo "piRa1n is up to date!";
+      echo "piRa1n and Checkra1n are up to date!";
     }
     elseif ($lookForUpdates == 1) {
       echo '<form action="update.php" method="post"><p>An update is available!<br><input type="submit" value="Update" name="updateSubmit"></p></form>';
