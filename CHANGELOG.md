@@ -1,6 +1,6 @@
 # Changelog
 
-## 1.1 - 2020-07-02
+## v1.1 - 2020-07-02
 ### Added
 - Version of piRa1n
 ### Changed
