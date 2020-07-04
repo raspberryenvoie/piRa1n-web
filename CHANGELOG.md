@@ -4,4 +4,4 @@
 ### Added
 - Version of piRa1n
 ### Changed
-- "piRa1n is up to date" to "piRa1n and Checkra1n are up to date"
+- "piRa1n is up to date!" to "piRa1n and Checkra1n are up to date!"
