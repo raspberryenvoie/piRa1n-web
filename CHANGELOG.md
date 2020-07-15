@@ -1,6 +1,6 @@
 # Changelog
 
-[comment]: <> (moved most of scripts to bash, add second '[' and ']' to condition to check if network if available in look_for_updates.sh)
+[comment]: <> (moved most of scripts to bash instead of sh, add second '[' and ']' to condition to check if network if available in look_for_updates.sh)
 
 ## v1.1 - 2020-07-02
 ### Added
