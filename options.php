@@ -14,6 +14,12 @@
     <div class="output">
       <?php
       if(isset($_POST['optionsSubmit'])){//to run PHP script on submit
+        if(!empty($_POST['autoRecoveryMode'])){
+          $autoRecoveryMode = "y";
+        }
+        else {
+          $autoRecoveryMode = "n";
+        }
         if(!empty($_POST['autoShutdown'])){
           $autoShutdown = "y";
         }
@@ -33,7 +39,7 @@
           $verbose = "n";
         }
       }
-      echo shell_exec("cd /home/pi/piRa1n && printf '" .$autoShutdown. "\n" .$safeMode. "\n" .$verbose. "\n' | sudo ./config.sh");
+      echo shell_exec("printf '" .$autoRecoveryMode. "\n" .$autoShutdown. "\n" .$safeMode. "\n" .$verbose. "\n' | sudo /home/pi/piRa1n/config.sh");
       ?>
     </div>
   </body>

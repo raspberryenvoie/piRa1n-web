@@ -74,12 +74,7 @@ input[type="submit"] {
 input[type="submit"]:hover {
   opacity: 1;
 }
-.update {
-  text-align: center;
-  font-size: 30px;
-  margin-top: 70px;
-}
-.shutdown {
+.otherDiv {
   text-align: center;
   font-size: 30px;
   margin-top: 70px;

@@ -16,11 +16,16 @@
     <div class="options">
       <form action="options.php" method="post">
         <p>
+          Auto recovery mode:<br>
+          <input type="checkbox" name="autoRecoveryMode" <?php
+    if( shell_exec("grep 'ideviceenterrecovery' /home/pi/piRa1n/piRa1n.sh")) {
+      echo "checked";
+    } ?>>
+        </p>
+        <p>
           Auto shutdown:<br>
           <input type="checkbox" name="autoShutdown" <?php
-    if( shell_exec("grep 'while true' /home/pi/piRa1n/piRa1n.sh")) {
-    }
-    else {
+    if( shell_exec("grep 'shutdown' /home/pi/piRa1n/piRa1n.sh")) {
       echo "checked";
     } ?>>
         </p>
@@ -41,7 +46,7 @@
         <input type="submit" name="optionsSubmit" value="Apply">
       </form>
     </div>
-    <div class="shutdown">
+    <div class="otherDiv">
       <form action="shutdown.php" method="post">
         <p>
         Shut down the Pi:<br>
@@ -49,7 +54,15 @@
         </p>
       </form>
     </div>
-    <div class="update">
+    <div class="otherDiv">
+      <form action="exit_recovery_mode.php" method="post">
+        <p>
+        If you're stuck in recovery mode:<br>
+        <input type="submit" value="Exit" name="exitRecoveryModeSubmit">
+        </p>
+      </form>
+    </div>
+    <div class="otherDiv">
     <?php
     $lookForUpdates = shell_exec('/home/pi/piRa1n-web/look_for_updates.sh');
     if ($lookForUpdates == 0) {

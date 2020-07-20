@@ -12,8 +12,8 @@
       <a href="/" class="back">&lt; Go back</a>
     </p>
     <div class="output">
-      <p>⚠️ Don't shut down the Pi until you see "Updates completed"!<br>
-        Please refresh this page!
+      <p>⚠️ Don't shutdown the Pi until the updates are completed!<br>
+        Please refresh this page.
       </p>
       <p>
       <?php
