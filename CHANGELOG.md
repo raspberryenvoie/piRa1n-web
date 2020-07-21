@@ -6,9 +6,9 @@
 - Timeout to wget to check if network if available
 - Auto recovery mode
 - Exit recovery mode
-- Top margin to update section in index.php
 ### Changed
 - Use bash in most of scripts instead of sh
+- Reduce top margins of otherDiv in index.php
 ### Removed
 - Unnecessary echo in shutdown.php
 
