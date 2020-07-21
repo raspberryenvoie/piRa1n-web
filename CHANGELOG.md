@@ -1,6 +1,6 @@
 # Changelog
 
-## V1.2
+## v1.2 - 2020-07-21
 ### Added
 - Second '[' and ']' to condition to check if network if available in look_for_updates.sh
 - Timeout to wget to check if network if available
