@@ -21,7 +21,7 @@
     <div class="output">
       <?php
       if (isset($_POST['odysseyra1nSubmit'])){
-        echo '<form action="odysseyra1n.php" method="post"><p>1. Restore rootfs<br>2. Jailbreak with Checkra1n but don\'t install Cydia (If "Auto shutdown" is enabled, you will need to unplug and replug the Pi to turn it back on).<br>3. Unlock your iDevice and unplug it.<br><input type="submit" value="Next" name="odysseyra1nNextSubmit"></p>';
+        echo '<form action="odysseyra1n.php" method="post"><p>1. Restore rootfs<br>2. Jailbreak with Checkra1n but don\'t install Cydia (If "Auto shutdown" is enabled, you will need to unplug and replug the Pi to turn it back on).<br>3. Unplug your iDevice and unlock it.<br><input type="submit" value="Next" name="odysseyra1nNextSubmit"></p>';
       } elseif (isset($_POST['odysseyra1nNextSubmit'])) {
         shell_exec("nohup sudo /home/pi/piRa1n/odysseyra1n.sh > /dev/null 2>&1 &");
         echo '<form action="odysseyra1n.php" method="post"><p>4. Plug the device back into the Pi.<br>5. Once Sileo is installed, open it, do all the updates and install the libhooker package.<br>6. If you are finished, click Done and re-jailbreak.<br>⚠️ OpenSSH is installed by default. Please change the root password to prevent the possibility of unsavory people remotely logging into your device using the default password.<br>Note: You don\’t have to reinstall Odysseyra1n after each reboot, just re-jailbreak using Checkra1n.<br><input type="submit" value="Done" name="odysseyra1nDoneSubmit"></p>';
