@@ -47,6 +47,14 @@
       </form>
     </div>
     <div class="otherDiv">
+      <form action="odysseyra1n.php" method="post">
+        <p>
+          Install Odysseyra1n (internet is required) <a href="#">more infos</a>:<br>
+        <input type="submit" value="Start" name="odysseyra1nSubmit">
+        </p>
+      </form>
+    </div>
+    <div class="otherDiv">
       <form action="shutdown.php" method="post">
         <p>
         Shut down the Pi:<br>

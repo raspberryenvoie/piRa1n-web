@@ -1,5 +1,11 @@
 # Changelog
 
+## v1.3 - 2020-07-23
+### Addded
+- Odysseyra1n option
+- Space after if
+- Style for submit button in stylesheet.css
+
 ## v1.2 - 2020-07-21
 ### Added
 - Second '[' and ']' to condition to check if network if available in look_for_updates.sh

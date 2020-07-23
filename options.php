@@ -13,26 +13,26 @@
     </p>
     <div class="output">
       <?php
-      if(isset($_POST['optionsSubmit'])){//to run PHP script on submit
-        if(!empty($_POST['autoRecoveryMode'])){
+      if (isset($_POST['optionsSubmit'])){//to run PHP script on submit
+        if (!empty($_POST['autoRecoveryMode'])){
           $autoRecoveryMode = "y";
         }
         else {
           $autoRecoveryMode = "n";
         }
-        if(!empty($_POST['autoShutdown'])){
+        if (!empty($_POST['autoShutdown'])){
           $autoShutdown = "y";
         }
         else {
           $autoShutdown = "n";
         }
-        if(!empty($_POST['safeMode'])){
+        if (!empty($_POST['safeMode'])){
           $safeMode = "y";
         }
         else {
           $safeMode = "n";
         }
-        if(!empty($_POST['verbose'])){
+        if (!empty($_POST['verbose'])){
           $verbose = "y";
         }
         else {

@@ -15,9 +15,9 @@
       <?php
       if(isset($_POST['exitRecoveryModeSubmit'])){
         shell_exec("sudo /home/pi/piRa1n/exit_recovery_mode.sh");
-        echo "Your iDevice is exiting recovery mode...";
       }
       ?>
+      Your iDevice is exiting recovery mode...
     </div>
   </body>
 </html>
