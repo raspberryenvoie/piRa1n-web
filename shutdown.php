@@ -16,8 +16,7 @@
       if (isset($_POST['shutdownSubmit'])){
         shell_exec("nohup sudo /home/pi/piRa1n/shutdown.sh > /dev/null 2>&1 &");
       }
-      ?>
-      Your Pi has been shut down!
+      ?>Your Pi has been shut down!
     </div>
   </body>
 </html>
