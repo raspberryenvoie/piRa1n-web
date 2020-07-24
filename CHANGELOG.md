@@ -1,5 +1,9 @@
 # Changelog
 
+## v1.3.1 - 2020-07-24
+### Fixed 
+- Shut down button
+
 ## v1.3 - 2020-07-23
 ### Addded
 - Odysseyra1n option
