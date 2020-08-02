@@ -49,7 +49,7 @@
     <div class="otherDiv">
       <form action="odysseyra1n.php" method="post">
         <p>
-          Install Odysseyra1n (internet is required) <a href="https://github.com/raspberryenvoie/piRa1n/wiki/6.-%5BOptional%5D-Install-Odysseyra1n">more infos</a>:<br>
+          Install Odysseyra1n (internet is required) <a href="https://github.com/raspberryenvoie/piRa1n/wiki/6.-%5BOptional%5D-Install-Odysseyra1n">more info</a>:<br>
         <input type="submit" value="Start" name="odysseyra1nSubmit">
         </p>
       </form>
