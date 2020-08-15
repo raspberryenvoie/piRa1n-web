@@ -1,6 +1,3 @@
-# piRa1n-web
-A web interface to configure and update piRa1n.
-
-# What is piRa1n?
-[piRa1n](https://github.com/raspberryenvoie/piRa1n) lets you Easily turn a Raspberry Pi 4 or a Banana pi m2 zero into a portable Checkra1n dongle. [Here](https://youtu.be/lqGb8SG-VII) is a demo of piRa1n.\
-More information about piRa1n can be found [here](https://github.com/raspberryenvoie/piRa1n).
+<h1 align="center">piRa1n-web</h1>
+<h3 align="center">A web interface to configure and update <a href=https://github.com/raspberryenvoie/piRa1n>piRa1n</a>.</h3>
+<p align="center"><img src="https://raw.githubusercontent.com/raspberryenvoie/piRa1n-web/master/Screenshot.png" alt="Screenshot"></p>
