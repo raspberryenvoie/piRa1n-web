@@ -39,7 +39,7 @@
 <?php readfile('/home/pi/piRa1n-web/update.out'); ?>
       </pre>
       <div class="cell">
-        <a class="cellLink" href="update.php">Refresh to see the status of updates in real time</a>
+        <a class="cellLink" href="update_status.php">Refresh to see the status of updates in real time</a>
       </div>
     </div>
     <script src="scripts/toggleLightMode.js"></script>

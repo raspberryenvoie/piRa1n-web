@@ -75,20 +75,18 @@
 
     <div class="title">UPDATES</div>
     <form class="group" action="actions.php" method="post">
-      <div class="cell">
-        <?php
-        $lookForUpdates = shell_exec('sudo /home/pi/piRa1n/piRa1n -l');
-        if ($lookForUpdates == 0) {
-          echo 'Everything is up-to-date';
-        } elseif ($lookForUpdates == 1) {
-          echo '          <input type="submit" name="updateSubmit" value="Install updates">';
-        } elseif ($lookForUpdates == 2) {
-          echo 'You are offline';
-        } else {
-          echo 'Could not look for updates';
-        }
-        ?>
-      </div>
+      <?php
+      $lookForUpdates = shell_exec('sudo /home/pi/piRa1n/piRa1n -l');
+      if ($lookForUpdates == 0) {
+        echo '          <div class="cell">Everything is up-to-date</div>';
+      } elseif ($lookForUpdates == 1) {
+        echo '          <input type="submit" name="updateSubmit" value="Install updates">';
+      } elseif ($lookForUpdates == 2) {
+        echo '          <div class="cell">You are offline</div>';
+      } else {
+        echo '          <div class="cell">Could not look for updates</div>';
+      }
+      ?>
       <div class="cell">
         <a class="cellLink" href="https://github.com/raspberryenvoie/piRa1n/blob/master/CHANGELOG.md#changelog">What's new?</a>
       </div>

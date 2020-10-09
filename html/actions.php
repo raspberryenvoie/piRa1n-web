@@ -12,7 +12,7 @@ if (isset($_POST['optionsSubmit'])) {
   header("Location: /");
   exit();
 } elseif (isset($_POST['updateSubmit'])) {
-  exec('sudo nohup /home/pi/piRa1n/piRa1n -u > /home/pi/piRa1n-web/update.out &');
+  exec('nohup sudo /home/pi/piRa1n/piRa1n -u > /home/pi/piRa1n-web/update.out &');
   header("Location: update_status.php");
   exit();
 }
