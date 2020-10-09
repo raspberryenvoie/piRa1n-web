@@ -26,6 +26,8 @@ esac
 apt update
 apt upgrade -y
 apt install apache2 php git -y
+
+# Install piRa1n-web
 git clone https://github.com/raspberryenvoie/piRa1n-web.git  /home/pi/piRa1n-web/
 
 # Fix file permissions
