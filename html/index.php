@@ -81,8 +81,7 @@
         if ($lookForUpdates == 0) {
           echo 'Everything is up-to-date';
         } elseif ($lookForUpdates == 1) {
-          echo '          <a class="cellLink" href="https://github.com/raspberryenvoie/piRa1n/wiki">Read the changelog file to know what\'s new</a>
-                    <input type="submit" name="updateSubmit" value="Install updates">';
+          echo '          <input type="submit" name="updateSubmit" value="Install updates">';
         } elseif ($lookForUpdates == 2) {
           echo 'You are offline';
         } else {
