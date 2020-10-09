@@ -77,7 +77,7 @@
     <form class="group" action="actions.php" method="post">
       <div class="cell">
         <?php
-        $lookForUpdates = shell_exec('/home/pi/piRa1n/piRa1n -l');
+        $lookForUpdates = shell_exec('sudo /home/pi/piRa1n/piRa1n -l');
         if ($lookForUpdates == 0) {
           echo 'Everything is up-to-date';
         } elseif ($lookForUpdates == 1) {
