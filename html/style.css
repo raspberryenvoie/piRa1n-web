@@ -1,0 +1,193 @@
+:root {
+  --clr-text: #feffff;
+  --clr-header: #121212;
+  --clr-group: #1c1c1e;
+  --clr-title: #8e8e93;
+  --clr-background: #000000;
+  --clr-switch-background: #39393d;
+  --clr-switch-shadow: #353539;
+  --invert-clr: 0;
+}
+
+.lightmode {
+  --clr-text: #000000;
+  --clr-header: #fafafc;
+  --clr-group: #feffff;
+  --clr-title: #6d6d72;
+  --clr-background: #f2f2f7;
+  --clr-switch-background: #e9e9ea;
+  --clr-switch-shadow: #e3e3e5;
+  --invert-clr: 1;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--clr-background);
+  color: var(--clr-text);
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  background-color: var(--clr-header);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.back {
+  position: absolute;
+  width: 14px;
+  height: 25px;
+  left: 0.8rem;
+  cursor: pointer;
+}
+
+.logo {
+  height: 55px;
+  -webkit-filter: invert(var(--invert-clr));
+  filter: invert(var(--invert-clr));
+}
+
+.toggle-light-mode {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  right: 0.8rem;
+  color: var(--color-text);
+  padding: 4px;
+  background: transparent;
+  cursor: pointer;
+  border: none;
+}
+
+.title {
+  position: relative;
+  top: 45px;
+  font-size: 0.9rem;
+  color: var(--clr-title);
+  margin-left: 0.8rem;
+}
+
+.group {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin-top: 50px;
+  background-color: var(--clr-group);
+  font-size: 1.1rem;
+}
+
+.cell {
+  position: relative;
+  padding: 0.8rem;
+}
+
+.switchWrapper {
+  position: absolute;
+  display: inline-block;
+  width: 50px;
+  height: 30px;
+  right: 0.8rem;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--clr-switch-background);
+  transition: 400ms;
+  border-radius: 15px;
+  box-shadow: inset 0 0 5px var(--clr-switch-shadow);
+  overflow: hidden;
+}
+
+.switchWrapper input[type="checkbox"] {
+  display: none;
+}
+
+.slider::before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 2px;
+  bottom: 2px;
+  background-color: #feffff;
+  transition: 400ms;
+  border-radius: 50%;
+  box-shadow: 1px 1px 5px 1px var(--clr-switch-shadow);
+}
+
+input:checked + .slider {
+  background-color: #30d158;
+  box-shadow: none;
+}
+
+input:checked + .slider::before {
+  transform: translateX(20px);
+  box-shadow: none;
+}
+
+
+input[type="submit"] {
+  padding: 0.8rem;
+  border: none;
+  color: #0984fe;
+  background-color: transparent;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.cellLink {
+  text-decoration: none;
+  color: #0984fe;
+}
+
+.footer {
+  margin-top: 40px;
+  color: var(--clr-title);
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.softwareVersion {
+  color: inherit;
+  text-decoration: none;
+}
+
+pre {
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  overflow: scroll;
+  margin-bottom: 0;
+}
+
+#copyJailbreakLog {
+  color: #0984fe;
+  background: transparent;
+  cursor: pointer;
+  border: none;
+  font-size: 1.1rem;
+}
+
+#copyUpdateLog {
+  color: #0984fe;
+  background: transparent;
+  cursor: pointer;
+  border: none;
+  font-size: 1.1rem;
+}
+
+textarea {
+  position: absolute;
+  left: -100%;
+}

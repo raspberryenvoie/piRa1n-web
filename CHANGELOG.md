@@ -1,16 +1,23 @@
 # Changelog
 
-## v1.3.1 - 2020-07-24
-### Fixed 
+# v2.0
+### Changed
+- Rewrote everything
+### Added
+- Button to switch between light and dark mode
+- Page to view the log
+
+# v1.3.1 - 2020-07-24
+### Fixed
 - Shut down button
 
-## v1.3 - 2020-07-23
-### Addded
+# v1.3 - 2020-07-23
+### Added
 - Odysseyra1n option
 - Space after if
 - Style for submit button in stylesheet.css
 
-## v1.2 - 2020-07-21
+# v1.2 - 2020-07-21
 ### Added
 - Second '[' and ']' to condition to check if network if available in look_for_updates.sh
 - Timeout to wget to check if network if available
@@ -22,7 +29,7 @@
 ### Removed
 - Unnecessary echo in shutdown.php
 
-## v1.1 - 2020-07-02
+# v1.1 - 2020-07-02
 ### Added
 - Version of piRa1n in the ui
 ### Changed
