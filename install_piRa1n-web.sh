@@ -36,7 +36,7 @@ chmod -R 755 /home/pi/piRa1n-web/
 
 # Copy files to /var/www/html
 rm -rf /var/www/html/*
-cp /home/pi/piRa1n-web/html/* /var/www/html/
+cp -R /home/pi/piRa1n-web/html/* /var/www/html/
 
 # Add sudoers file
 cd /tmp/
