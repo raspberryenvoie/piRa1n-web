@@ -9,16 +9,6 @@ echo -e "\033[0;32m#        \033[0;36mMade by raspberryenvoie        \033[0;32m#
 echo -e "\033[0;32m#                                       #\033[0m"
 echo -e "\033[0;32m#########################################\033[0m"
 
-read -p 'Installing piRa1n-web will delete the whole contents of /var/www/html/'$'\n''Do you want to continue? [Y/n] ' continue
-case $continue in
-  [yY][eE][sS]|[yY] )
-    echo 'Installing piRa1n-web...'
-    ;;
-  * )
-    exit
-    ;;
-esac
-
 # Update the system and install the dependencies
 apt update
 apt upgrade -y
