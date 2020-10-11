@@ -14,9 +14,6 @@ case $continue in
   [yY][eE][sS]|[yY] )
     echo 'Installing piRa1n-web...'
     ;;
-  [nN][oO]|[nN] )
-    exit
-    ;;
   * )
     exit
     ;;
