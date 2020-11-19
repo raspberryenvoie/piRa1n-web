@@ -80,6 +80,13 @@ if (isset($_POST['optionsSubmit'])) {
         Your iDevice is exiting recovery mode...
       </div>
     </div>';
+    } elseif (isset($_POST['recoveryModeSubmit'])) {
+	exec('sudo /home/pi/piRa1n/piRa1n -r');
+	echo '  <div class="group">
+	<div class="cell">
+		Your iDevice has entered recovery mode.
+	</div>
+	</div>';
     } else {
       echo '  <div class="group">
       <div class="cell">Doing nothing because no action was provided.</div>
