@@ -87,7 +87,7 @@ if (isset($_POST['optionsSubmit'])) {
 		Your iDevice has entered recovery mode.
 	</div>
 	</div>';
-} else {
+    } else {
       echo '  <div class="group">
       <div class="cell">Doing nothing because no action was provided.</div>
     </div>';

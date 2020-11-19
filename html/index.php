@@ -68,11 +68,10 @@
       <input type="submit" name="odysseyra1nIntroSubmit" value="Install odysseyra1n">
     </form>
 
-<div class="title">IF YOU NEED TO BE IN RECOVERY MODE (CAN TAKE UP TO 15s, BE PATIENT)</div>
+    <div class="title">IF YOU NEED TO BE IN RECOVERY MODE (CAN TAKE UP TO 15s, BE PATIENT)</div>
     <form class="group" action="actions.php" method="post">
       <input type="submit" name="recoveryModeSubmit" value="Enter recovery mode">
     </form>
-
     <div class="title">IF YOU'RE STUCK IN RECOVERY MODE</div>
     <form class="group" action="actions.php" method="post">
       <input type="submit" name="exitRecoveryModeSubmit" value="Exit recovery mode">
