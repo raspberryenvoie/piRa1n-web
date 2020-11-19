@@ -1,5 +1,9 @@
 # Changelog
 
+# v2.1 - 2020-11-19
+# Added
+- Support to enter recovery mode
+
 # v2.0
 ### Changed
 - Rewrote everything
