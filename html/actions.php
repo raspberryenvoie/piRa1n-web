@@ -84,7 +84,7 @@ if (isset($_POST['optionsSubmit'])) {
 	exec('sudo /home/pi/piRa1n/piRa1n -r');
 	echo '  <div class="group">
 	<div class="cell">
-		Your iDevice has left recovery mode.
+		Your iDevice has entered recovery mode.
 	</div>
 	</div>';
 } else {
