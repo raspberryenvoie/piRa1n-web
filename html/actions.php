@@ -57,8 +57,8 @@ if (isset($_POST['optionsSubmit'])) {
     </div>';
     } elseif (isset($_POST['odysseyra1nIntroSubmit'])) {
       echo '  <form class="group" action="actions.php" method="post">
-      <div class="cell">1. Restore rootfs</div>
-      <div class="cell">2. Jailbreak using checkra1n but don\'t install Cydia</div>
+      <div class="cell">1. If you\'re already jailbroken, restore system using the ckeckra1n app.</div>
+      <div class="cell">2. Jailbreak using checkra1n, but don\’t open the ckeckra1n app.</div>
       <div class="cell">(If "Auto shutdown" is enabled, you will need to unplug and replug the Pi to turn it back on.)</div>
       <div class="cell">3. Unplug your iDevice and unlock.</div>
       <input type="submit" name="odysseyra1nInstallSubmit" value="Next" >
@@ -66,10 +66,9 @@ if (isset($_POST['optionsSubmit'])) {
     } elseif (isset($_POST['odysseyra1nInstallSubmit'])) {
       exec('nohup sudo /home/pi/piRa1n/piRa1n -o > /dev/null 2>&1 &');
       echo '  <form class="group" action="actions.php" method="post">
-      <div class="cell">1. Replug your iDevice</div>
-      <div class="cell">2. Once Sileo is installed, open it, do all the updates and install the libhooker package</div>
-      <div class="cell">3. If you are finished, click on \'Done\' and re-jailbreak</div>
-      <div class="cell">4. Don\'t forget to change the default root and mobile passwords of your iDevice</div>
+      <div class="cell">1. Replug your iDevice.</div>
+      <div class="cell">2. Wait while odysseyra1n is being installed.</div>
+      <div class="cell">3. Once Sileo is installed, click on \'Done\'</div>
       <div class="cell">Note: You don\'t have to reinstall odysseyra1n after each reboot, just re-jailbreak using checkra1n.</div>
       <input type="submit" name="odysseyra1nDoneSubmit" value="Done">
     </form>';

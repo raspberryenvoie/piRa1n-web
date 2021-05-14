@@ -1,4 +1,7 @@
-# Changelog
+# v2.2 - 2021-05-14
+# Changed
+- Made install script POSIX compliant
+- Updated odysseyra1n instructions
 
 # v2.1.1 - 2020-11-19
 # Fixed
