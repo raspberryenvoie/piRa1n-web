@@ -8,11 +8,11 @@ if (isset($_POST['optionsSubmit'])) {
   header("Location: /");
   exit();
 } elseif (isset($_POST['odysseyra1nDoneSubmit'])) {
-  exec('sudo /home/pi/piRa1n/piRa1n -S');
+  exec('nohup sudo /home/pi/piRa1n/piRa1n -S > /dev/null 2>&1 &');
   header("Location: /");
   exit();
 } elseif (isset($_POST['updateSubmit'])) {
-  exec('sudo /home/pi/piRa1n/piRa1n -U');
+  exec('nohup sudo /home/pi/piRa1n/piRa1n -U > /dev/null 2>&1 &');
   header("Location: update_status.php");
   exit();
 }
@@ -49,7 +49,7 @@ if (isset($_POST['optionsSubmit'])) {
 
     <?php
     if (isset($_POST['shutdownSubmit'])) {
-      exec('nohup sudo /home/pi/piRa1n/piRa1n -s > /dev/null 2>&1');
+      exec('nohup sudo /home/pi/piRa1n/piRa1n -s > /dev/null 2>&1 &');
       echo '  <div class="group">
       <div class="cell">
         Your Pi has been shut down.
@@ -73,14 +73,14 @@ if (isset($_POST['optionsSubmit'])) {
       <input type="submit" name="odysseyra1nDoneSubmit" value="Done">
     </form>';
     } elseif (isset($_POST['exitRecoveryModeSubmit'])) {
-      exec('sudo /home/pi/piRa1n/piRa1n -e');
+      exec('nohup sudo /home/pi/piRa1n/piRa1n -e > /dev/null 2>&1 &');
       echo '  <div class="group">
       <div class="cell">
         Your iDevice is exiting recovery mode...
       </div>
     </div>';
     } elseif (isset($_POST['recoveryModeSubmit'])) {
-	    exec('nohup sudo /home/pi/piRa1n/piRa1n -r > /dev/null 2>&1');
+	    exec('nohup sudo /home/pi/piRa1n/piRa1n -r > /dev/null 2>&1 &');
 	    echo '  <div class="group">
 	    <div class="cell">
 		    Your iDevice is entering recovery mode...
