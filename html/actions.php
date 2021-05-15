@@ -58,7 +58,7 @@ if (isset($_POST['optionsSubmit'])) {
     } elseif (isset($_POST['odysseyra1nIntroSubmit'])) {
       echo '  <form class="group" action="actions.php" method="post">
       <div class="cell">1. If you\'re already jailbroken, restore system using the ckeckra1n app.</div>
-      <div class="cell">2. Jailbreak using checkra1n, but don\’t open the ckeckra1n app.</div>
+      <div class="cell">2. Jailbreak using checkra1n, but don’t open the ckeckra1n app.</div>
       <div class="cell">(If "Auto shutdown" is enabled, you will need to unplug and replug the Pi to turn it back on.)</div>
       <div class="cell">3. Unplug your iDevice and unlock.</div>
       <input type="submit" name="odysseyra1nInstallSubmit" value="Next" >
